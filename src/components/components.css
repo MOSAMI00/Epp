@@ -1,0 +1,125 @@
+.kpi-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kpi-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.kpi-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.kpi-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: var(--page-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-green);
+}
+
+.kpi-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.kpi-subtitle {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.kpi-trend {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.trend-up {
+  color: var(--status-completed);
+}
+
+.trend-down {
+  color: var(--status-disputed);
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-pending { background-color: #FEF5E7; color: var(--status-pending); }
+.status-confirmed { background-color: #EBF5FB; color: var(--status-confirmed); }
+.status-in-use { background-color: #FDEDEC; color: var(--status-in-use); } /* Wait, In Use is Orange E67E22 */
+.status-in-use { background-color: #FEF1E6; color: var(--status-in-use); }
+.status-completed { background-color: #EAFAF1; color: var(--status-completed); }
+.status-cancelled { background-color: #F2F4F4; color: var(--status-cancelled); }
+.status-disputed { background-color: #FDEDEC; color: var(--status-disputed); }
+
+/* Tables */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.custom-table th, .custom-table td {
+  padding: 1rem;
+  text-align: right;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.custom-table th {
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+/* Alerts */
+.alert {
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.alert-warning {
+  background-color: #FFF9E6;
+  border: 1px solid var(--status-pending);
+  color: #222;
+}
+
+.alert-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.alert-icon {
+  font-size: 1.5rem;
+}

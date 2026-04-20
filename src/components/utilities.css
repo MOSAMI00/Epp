@@ -1,0 +1,13 @@
+.opacity-60 {
+  opacity: 0.6;
+}
+
+.border-danger {
+  border: 2px solid #E74C3C !important;
+}
+
+/* Custom layout helpers */
+.sticky-top {
+  position: sticky;
+  top: 80px;
+}
